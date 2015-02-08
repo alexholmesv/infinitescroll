@@ -1,0 +1,7 @@
+<div id="content">
+ <%= render(partial: 'post', collection: @posts) %>
+</div>
+
+<p id="view-more">
+ <%= link_to('Ver Más', url_for(page: @posts.current_page + 1)) %>
+</p>

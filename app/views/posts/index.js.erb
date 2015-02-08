@@ -1,0 +1,2 @@
+$('#content').append("<%= j render @posts %>");
+$("#view-more").attr("href", "<%= j posts_path(page: @posts.current_page + 1) %>");
